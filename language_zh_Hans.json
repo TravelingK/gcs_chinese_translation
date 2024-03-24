@@ -1229,7 +1229,7 @@
         "1 foot"
     ],
     "0": [
-        "# Generated on Sat, 13 Jan 2024 11:17:01 PST\n",
+        "# 生成于 Sat, 13 Jan 2024 11:17:01 PST\n",
         "#\n",
         "# Key-value pairs are defined as one or more lines prefixed with \" for the\n",
         "# prefixes are then followed by a quoted string, using escaping rules for Go\n",
