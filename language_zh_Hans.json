@@ -722,8 +722,11 @@
         "The color to use when light mode is enabled"
     ],
     "1289": [
+        "The internal PDF viewer will be used if the External PDF Viewer field is empty.",
+        "Use $FILE where the full path to the PDF should be placed.",
+        "Use $PAGE where the page number should be placed.",
         null,
-        "Use $FILE where the full path to the PDF should be placed."
+        "In most cases, you'll want to surround the $FILE variable with quotes."
     ],
     "1318": [
         "The weight that can be carried slung across the back"
@@ -741,17 +744,19 @@
         "these entries"
     ],
     "1341": [
-        null,
-        null,
+        "TL0: Stone Age (Prehistory)",
+        "TL1: Bronze Age (3500 B.C.+)",
         "TL2: Iron Age (1200 B.C.+)",
         "TL3: Medieval (600 A.D.+)",
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        "TL10: Robotic Age (2070+?)"
+        "TL4: Age of Sail (1450+)",
+        "TL5: Industrial Revolution (1730+)",
+        "TL6: Mechanized Age (1880+)",
+        "TL7: Nuclear Age (1940+)",
+        "TL8: Digital Age (1980+)",
+        "TL9: Microtech Age (2025+?)",
+        "TL10: Robotic Age (2070+?)",
+        "TL11: Age of Exotic Matter",
+        "TL12: Anything Goes"
     ],
     "1340": [
         "TL"
@@ -843,7 +848,7 @@
         "Unable to update library location"
     ],
     "1451": [
-        null,
+        "Unable to set option %s to %s",
         "%v"
     ],
     "1449": [
@@ -1159,8 +1164,9 @@
         "block"
     ],
     "125": [
-        null,
-        "separated by commas, such as \\\"1, 3-4 in ascending"
+        "A page range in the form \\\"5\\\" or \\\"9-12\\\" or multiple",
+        "separated by commas, such as \\\"1, 3-4 in ascending",
+        "order with no overlapping ranges"
     ],
     "754": [
         "miles"
@@ -1224,8 +1230,15 @@
     ],
     "0": [
         "# Generated on Sat, 13 Jan 2024 11:17:01 PST\n",
-        null,
-        "# Key-value pairs are defined as one or more lines prefixed with \" for the\n"
+        "#\n",
+        "# Key-value pairs are defined as one or more lines prefixed with \" for the\n",
+        "# prefixes are then followed by a quoted string, using escaping rules for Go\n",
+        "# strings where needed. When two or more lines are present in a row, they will\n",
+        "# be concatenated together with an intervening \\n character.\n",
+        "#\n",
+        "# Do NOT modify the 'k' values. They are the values as seen in the code.\n",
+        "#\n",
+        "# Replace the 'v' values with the appropriate translation.\n"
     ],
     "1531": [
         "World1"
@@ -1300,7 +1313,8 @@
         "Randomize the handedness using the current ancestry"
     ],
     "434": [
-        "Existing content for this library will be removed and replaced."
+        "Existing content for this library will be removed and replaced.",
+        "Content in other libraries will not be modified"
     ],
     "755": [
         "Minimize"
@@ -1319,7 +1333,7 @@
     ],
     "21": [
         null,
-        null,
+        "Holding down the %s key while using",
         "the mouse wheel will change the scale."
     ],
     "105": [
@@ -1369,7 +1383,7 @@
     ],
     "22": [
         null,
-        null,
+        "This key is normally mapped to a PDF named:",
         "%s"
     ],
     "874": [
@@ -1407,5 +1421,3272 @@
     ],
     "81": [
         "%sHas equipment which is equipped and whose name %s"
+    ],
+    "3": [
+        "0-255 or 0-100%"
+    ],
+    "4": [
+        "0-360 or 0-100%"
+    ],
+    "2": [
+        "0-100%"
+    ],
+    "1": [
+        "0 of 0"
+    ],
+    "9": [
+        "25% Scale"
+    ],
+    "7": [
+        "1 meter"
+    ],
+    "6": [
+        "1 inch"
+    ],
+    "13": [
+        "200% Scale"
+    ],
+    "16": [
+        "500% Scale"
+    ],
+    "11": [
+        "75% Scale"
+    ],
+    "14": [
+        "300% Scale"
+    ],
+    "15": [
+        "400% Scale"
+    ],
+    "18": [
+        null,
+        null,
+        "Requires these tags:",
+        "● "
+    ],
+    "19": [
+        null,
+        null,
+        "Second mode:"
+    ],
+    "20": [
+        null,
+        "Encumbrance [%s]"
+    ],
+    "23": [
+        " %[1]s [%[1]s options]"
+    ],
+    "24": [
+        " <command> [command options]"
+    ],
+    "25": [
+        " a contained quantity which "
+    ],
+    "27": [
+        " a skill whose name "
+    ],
+    "32": [
+        " attacks]"
+    ],
+    "33": [
+        " Block"
+    ],
+    "34": [
+        " Default: "
+    ],
+    "29": [
+        " against "
+    ],
+    "35": [
+        " Dodge"
+    ],
+    "39": [
+        " level "
+    ],
+    "41": [
+        " Parry"
+    ],
+    "42": [
+        " per die)"
+    ],
+    "48": [
+        " which "
+    ],
+    "47": [
+        " to skill level due to minimum ST requirement"
+    ],
+    "44": [
+        " pts]"
+    ],
+    "46": [
+        " to "
+    ],
+    "54": [
+        "#"
+    ],
+    "53": [
+        "\\\"x2\\\", \\\"+2 CF\\\", \\\"-0.2 CF\\\""
+    ],
+    "52": [
+        "\\\"+5\\\", \\\"-5\\\", \\\"+10%\\\", \\\"-10%\\\", \\\"x3.2\\\""
+    ],
+    "50": [
+        "\\\"+5 lb\\\", \\\"-5 lb\\\", \\\"+10%\\\", \\\"-10%\\\""
+    ],
+    "55": [
+        "#: This weapon can fire in high cyclic controlled bursts, reducing Recoil to 1."
+    ],
+    "61": [
+        "%d Fright Check Penalty"
+    ],
+    "60": [
+        "%d files will be opened."
+    ],
+    "62": [
+        "%d of %d"
+    ],
+    "67": [
+        "%s Changes"
+    ],
+    "68": [
+        "%s Container"
+    ],
+    "69": [
+        "%s Editor for %s"
+    ],
+    "70": [
+        "%s feet"
+    ],
+    "65": [
+        "%s (%s per die, per level)"
+    ],
+    "64": [
+        "%s (%s per die)"
+    ],
+    "76": [
+        "%s running start"
+    ],
+    "75": [
+        "%s Points"
+    ],
+    "74": [
+        "%s options:"
+    ],
+    "72": [
+        "%s is copyrighted ©%s by %s"
+    ],
+    "77": [
+        "%s v%s is available!"
+    ],
+    "80": [
+        "%s, Build %s"
+    ],
+    "79": [
+        "%s [options]"
+    ],
+    "88": [
+        "*: Changing reach requires a Ready maneuver."
+    ],
+    "84": [
+        "'%[1]s' is not a valid %[2]s command"
+    ],
+    "85": [
+        "(base only)"
+    ],
+    "83": [
+        "'%[1]s' is not a valid %[2]s command"
+    ],
+    "86": [
+        "(levels only)"
+    ],
+    "93": [
+        "*From [Alternate Damage Scheme (Thr = Sw-2)](https://github.com/richardwilkes/gcs/issues/97)*"
+    ],
+    "90": [
+        "*From a [house rule](https://gamingballistic.com/2020/12/04/df-eastmarch-boss-fight-and-house-rules/) originating with Kevin Smyth*"
+    ],
+    "91": [
+        "*From a [house rule](https://github.com/richardwilkes/gcs/pull/393) that uses d3s instead of d6s for damage*"
+    ],
+    "96": [
+        "*The standard damage progression*"
+    ],
+    "97": [
+        "+"
+    ],
+    "94": [
+        "*From [Pyramid 3-83, pages 16-19](PY83:16)*"
+    ],
+    "100": [
+        ", notes "
+    ],
+    "98": [
+        "+%d Fright Check Bonus"
+    ],
+    "106": [
+        "- rgb(), e.g. \\\"rgb(255, 255, 0)\\\""
+    ],
+    "103": [
+        "- hsla(), e.g. \\\"hsla(120, 100%, 50%, 0.3)\\\""
+    ],
+    "104": [
+        "- long hexadecimal colors, e.g. \\\"#FFFF00\\\""
+    ],
+    "101": [
+        ", specialization "
+    ],
+    "107": [
+        "- rgba(), e.g. \\\"rgba(255, 255, 0, 0.3)\\\""
+    ],
+    "112": [
+        "<unknown>"
+    ],
+    "113": [
+        "A0"
+    ],
+    "108": [
+        "- short hexadecimal colors, e.g. \\\"#FF0\\\""
+    ],
+    "109": [
+        "; Cost: -1"
+    ],
+    "121": [
+        "a contained weight"
+    ],
+    "115": [
+        "A2"
+    ],
+    "124": [
+        "a list"
+    ],
+    "122": [
+        "A description of any special effects for hits to this location"
+    ],
+    "116": [
+        "A3"
+    ],
+    "119": [
+        "A6"
+    ],
+    "134": [
+        "Acc"
+    ],
+    "132": [
+        "A unique ID for the attribute"
+    ],
+    "128": [
+        "a skill"
+    ],
+    "133": [
+        "About %s"
+    ],
+    "126": [
+        "A reference to the book and page the item appears on e.g. B22 would refer to \\\"Basic Set\\\", page 22"
+    ],
+    "131": [
+        "a trait"
+    ],
+    "135": [
+        "Accent"
+    ],
+    "140": [
+        "Add Hit Location"
+    ],
+    "139": [
+        "Add Entry"
+    ],
+    "143": [
+        "Add Natural Attacks"
+    ],
+    "138": [
+        "Add Attribute"
+    ],
+    "142": [
+        "Add Library"
+    ],
+    "147": [
+        "Add Sub-Table"
+    ],
+    "151": [
+        "against"
+    ],
+    "148": [
+        "Add sub-table"
+    ],
+    "152": [
+        "Age"
+    ],
+    "150": [
+        "Advantages"
+    ],
+    "153": [
+        "All Files"
+    ],
+    "154": [
+        "All Readable Files"
+    ],
+    "156": [
+        "Alpha"
+    ],
+    "157": [
+        "Alpha:"
+    ],
+    "158": [
+        "Alternate"
+    ],
+    "166": [
+        "Ancestry"
+    ],
+    "165": [
+        "An ID for the hit location"
+    ],
+    "162": [
+        "American Male"
+    ],
+    "159": [
+        "Alternative Abilities"
+    ],
+    "163": [
+        "Amount"
+    ],
+    "171": [
+        "and whose notes"
+    ],
+    "169": [
+        "and at least one tag"
+    ],
+    "168": [
+        "and all tags"
+    ],
+    "170": [
+        "and whose level"
+    ],
+    "178": [
+        "Apply Changes"
+    ],
+    "174": [
+        "and whose usage"
+    ],
+    "176": [
+        "Any Tag"
+    ],
+    "184": [
+        "Are you sure you want to open all of these?"
+    ],
+    "179": [
+        "Apply changes made to",
+        "%s?"
+    ],
+    "181": [
+        "Apply Template to Character Sheet"
+    ],
+    "192": [
+        "at least"
+    ],
+    "189": [
+        "Are you sure you want to reset the",
+        "%s?"
+    ],
+    "186": [
+        "Are you sure you want to remove %s?"
+    ],
+    "190": [
+        "Armor Divisor"
+    ],
+    "193": [
+        "At least one path must be specified."
+    ],
+    "188": [
+        "Are you sure you want to reset '%s'?"
+    ],
+    "191": [
+        "as a %"
+    ],
+    "194": [
+        "at most"
+    ],
+    "196": [
+        "Attribute"
+    ],
+    "203": [
+        "Available commands:"
+    ],
+    "200": [
+        "Attributes"
+    ],
+    "198": [
+        "Attribute Qualifier"
+    ],
+    "204": [
+        "B: Has an attached bipod. When used from a prone position, "
+    ],
+    "201": [
+        "Attributes…"
+    ],
+    "199": [
+        "Attribute Type"
+    ],
+    "197": [
+        "Attribute Definition Drag"
+    ],
+    "209": [
+        "Base Cost"
+    ],
+    "208": [
+        "Banding"
+    ],
+    "219": [
+        "Birthday"
+    ],
+    "221": [
+        "Black"
+    ],
+    "215": [
+        "Basic Set"
+    ],
+    "214": [
+        "Basic Lift"
+    ],
+    "220": [
+        "Bite"
+    ],
+    "217": [
+        "Basic Thrust"
+    ],
+    "218": [
+        "Bevel"
+    ],
+    "225": [
+        "Block Modifier"
+    ],
+    "227": [
+        "Blue:"
+    ],
+    "228": [
+        "Body Type"
+    ],
+    "230": [
+        "Bold"
+    ],
+    "239": [
+        "Built-in"
+    ],
+    "237": [
+        "Broken Ground"
+    ],
+    "233": [
+        "Brightness"
+    ],
+    "229": [
+        "Body Type…"
+    ],
+    "236": [
+        "Broad Jump:"
+    ],
+    "240": [
+        "Bulk"
+    ],
+    "234": [
+        "Brightness:"
+    ],
+    "238": [
+        "Build "
+    ],
+    "231": [
+        "Bottom"
+    ],
+    "232": [
+        "Bottom Margin"
+    ],
+    "226": [
+        "Blue"
+    ],
+    "246": [
+        "Calendar"
+    ],
+    "265": [
+        "Check for %s updates"
+    ],
+    "260": [
+        "Casting Time"
+    ],
+    "254": [
+        "CapsLock"
+    ],
+    "243": [
+        "by %d%%"
+    ],
+    "258": [
+        "Casting Cost"
+    ],
+    "257": [
+        "Cast"
+    ],
+    "248": [
+        "Can Block"
+    ],
+    "261": [
+        "CF"
+    ],
+    "244": [
+        "Calculator for %s"
+    ],
+    "262": [
+        "chamber shots"
+    ],
+    "259": [
+        "Casting Duration"
+    ],
+    "249": [
+        "Can Parry"
+    ],
+    "245": [
+        "Calculators (jumping, throwing, hiking, etc.)"
+    ],
+    "247": [
+        "Campaigns"
+    ],
+    "252": [
+        "Cannot Redo"
+    ],
+    "255": [
+        "Carried Equipment (%s; $%s)"
+    ],
+    "264": [
+        "Character Templates"
+    ],
+    "266": [
+        "Checking for %s updates…"
+    ],
+    "275": [
+        "Clockwise"
+    ],
+    "278": [
+        "College"
+    ],
+    "279": [
+        "colleges"
+    ],
+    "273": [
+        "Clear Portrait"
+    ],
+    "269": [
+        "Choose one or more destinations:"
+    ],
+    "270": [
+        "Clamp"
+    ],
+    "271": [
+        "Class"
+    ],
+    "267": [
+        "Choice Name"
+    ],
+    "281": [
+        "Color Mode"
+    ],
+    "282": [
+        "Color-Burn"
+    ],
+    "284": [
+        "Colors"
+    ],
+    "287": [
+        "Compound"
+    ],
+    "295": [
+        "contains"
+    ],
+    "288": [
+        "Condensed"
+    ],
+    "300": [
+        "Convert to Container"
+    ],
+    "298": [
+        "Control"
+    ],
+    "286": [
+        "combined with"
+    ],
+    "296": [
+        "Content"
+    ],
+    "289": [
+        "Condition"
+    ],
+    "299": [
+        "Control Edge"
+    ],
+    "305": [
+        "Copy to Character Sheet"
+    ],
+    "304": [
+        "Copy"
+    ],
+    "303": [
+        "Copies"
+    ],
+    "301": [
+        "Convert to Non-Container"
+    ],
+    "323": [
+        "CSS:"
+    ],
+    "320": [
+        "CR: 12 (Resist quite often)"
+    ],
+    "308": [
+        "Copy to Template"
+    ],
+    "318": [
+        "CR: 6 (Resist rarely)"
+    ],
+    "313": [
+        "Cost Per Level"
+    ],
+    "316": [
+        "Counter-Clockwise"
+    ],
+    "322": [
+        "Created"
+    ],
+    "315": [
+        "Count"
+    ],
+    "306": [
+        "Copy to clipboard"
+    ],
+    "307": [
+        "Copy to Other Character Sheet"
+    ],
+    "311": [
+        "Cost Adjustment"
+    ],
+    "312": [
+        "Cost Modifier"
+    ],
+    "310": [
+        "Cost"
+    ],
+    "319": [
+        "CR: 9 (Resist fairly often)"
+    ],
+    "317": [
+        "CR Adjustment"
+    ],
+    "329": [
+        "Damage Modifier"
+    ],
+    "330": [
+        "Damage Modifier Per Die"
+    ],
+    "331": [
+        "Damage Progression"
+    ],
+    "328": [
+        "damage"
+    ],
+    "337": [
+        "Decimal"
+    ],
+    "333": [
+        "Damage:"
+    ],
+    "340": [
+        "Decrease Tech Level"
+    ],
+    "327": [
+        "Damage"
+    ],
+    "334": [
+        "Dark"
+    ],
+    "341": [
+        "Decrease Uses"
+    ],
+    "326": [
+        "Cut"
+    ],
+    "351": [
+        "Default Body Type…"
+    ],
+    "347": [
+        "Default Adjustment"
+    ],
+    "344": [
+        "Decrement Points"
+    ],
+    "348": [
+        "Default Attributes"
+    ],
+    "343": [
+        "Decrement Level"
+    ],
+    "349": [
+        "Default Attributes…"
+    ],
+    "366": [
+        "Desert, Hard-packed"
+    ],
+    "357": [
+        "Default: "
+    ],
+    "358": [
+        "Defaults"
+    ],
+    "355": [
+        "Default Sheet Settings…"
+    ],
+    "361": [
+        "Delete Attribute"
+    ],
+    "352": [
+        "Default Player Name"
+    ],
+    "368": [
+        "Development"
+    ],
+    "354": [
+        "Default Sheet Settings"
+    ],
+    "373": [
+        "Disadvantages"
+    ],
+    "374": [
+        "Discard Changes"
+    ],
+    "363": [
+        "Delete Selection"
+    ],
+    "371": [
+        "Difference"
+    ],
+    "372": [
+        "Difficulty"
+    ],
+    "356": [
+        "Default Tech Level"
+    ],
+    "365": [
+        "Desert"
+    ],
+    "364": [
+        "Description"
+    ],
+    "360": [
+        "Delete"
+    ],
+    "369": [
+        "Development versions don't look for %s updates"
+    ],
+    "398": [
+        "DR Bonus"
+    ],
+    "392": [
+        "does not start with"
+    ],
+    "400": [
+        "Drag"
+    ],
+    "388": [
+        "does not contain"
+    ],
+    "381": [
+        "do not contain"
+    ],
+    "395": [
+        "Down"
+    ],
+    "375": [
+        "Display help information for a command and exit."
+    ],
+    "376": [
+        "Display short version information and exit"
+    ],
+    "391": [
+        "Does not have"
+    ],
+    "384": [
+        "Dock Into Workspace"
+    ],
+    "390": [
+        "does not exist in the Markdown directory in any library."
+    ],
+    "387": [
+        "Does it exist?"
+    ],
+    "386": [
+        "Dodge"
+    ],
+    "394": [
+        "Double-click to set a character portrait, or drag an image onto this block."
+    ],
+    "423": [
+        "Equipment Modifier"
+    ],
+    "422": [
+        "Equipment Items"
+    ],
+    "403": [
+        "Dst-Atop"
+    ],
+    "412": [
+        "Editors"
+    ],
+    "406": [
+        "Dst-Over"
+    ],
+    "421": [
+        "Equipment Item"
+    ],
+    "410": [
+        "Edit"
+    ],
+    "414": [
+        "Encumbrance"
+    ],
+    "417": [
+        "End"
+    ],
+    "413": [
+        "Enabled"
+    ],
+    "404": [
+        "Dst-In"
+    ],
+    "418": [
+        "ends with"
+    ],
+    "409": [
+        "Duration"
+    ],
+    "420": [
+        "Equipment"
+    ],
+    "419": [
+        "Enter a weight or percentage, e.g. \\\"2 lb\\\" or \\\"5%\\\""
+    ],
+    "441": [
+        "Export sheets using the specified template file"
+    ],
+    "433": [
+        "Exclusion"
+    ],
+    "435": [
+        "Existing remote (%) does not match requested remote (%s)"
+    ],
+    "426": [
+        "Equipped"
+    ],
+    "429": [
+        "Escape"
+    ],
+    "438": [
+        "Expanded"
+    ],
+    "437": [
+        "Exotic"
+    ],
+    "430": [
+        "Even-Odd"
+    ],
+    "427": [
+        "Error"
+    ],
+    "425": [
+        "Equipment with a rated ST use this value instead of the user's ST"
+    ],
+    "446": [
+        "Extra-Black"
+    ],
+    "458": [
+        "Field"
+    ],
+    "447": [
+        "Extra-Bold"
+    ],
+    "450": [
+        "Extra-Light"
+    ],
+    "448": [
+        "Extra-Condensed"
+    ],
+    "455": [
+        "Features"
+    ],
+    "445": [
+        "External PDF Viewer"
+    ],
+    "459": [
+        "File"
+    ],
+    "457": [
+        "Fencing"
+    ],
+    "463": [
+        "First mode:"
+    ],
+    "449": [
+        "Extra-Expanded"
+    ],
+    "453": [
+        "Favorite"
+    ],
+    "460": [
+        "File already exists! Do you want to overwrite it?"
+    ],
+    "461": [
+        "Fill"
+    ],
+    "486": [
+        "Fragmentation Type"
+    ],
+    "489": [
+        "from others"
+    ],
+    "481": [
+        "Forest, Light"
+    ],
+    "477": [
+        "for striking only"
+    ],
+    "485": [
+        "Fragmentation Base Damage"
+    ],
+    "467": [
+        "Fit Width"
+    ],
+    "484": [
+        "Fragmentation Armor Divisor"
+    ],
+    "483": [
+        "Fragmentation"
+    ],
+    "466": [
+        "Fit Page"
+    ],
+    "468": [
+        "Focused Tab"
+    ],
+    "469": [
+        "Folder Name"
+    ],
+    "464": [
+        "First Page"
+    ],
+    "474": [
+        "For Giants"
+    ],
+    "472": [
+        "Fonts"
+    ],
+    "470": [
+        "Follow"
+    ],
+    "491": [
+        "from skill "
+    ],
+    "479": [
+        "Forest"
+    ],
+    "480": [
+        "Forest, Dense"
+    ],
+    "478": [
+        "for throwing only"
+    ],
+    "497": [
+        "Fully Automatic (Mode 1)"
+    ],
+    "493": [
+        "from/to target group"
+    ],
+    "507": [
+        "GitHub Account"
+    ],
+    "499": [
+        "Fully Automatic Only"
+    ],
+    "503": [
+        "Generates a template for a localization file from source code."
+    ],
+    "500": [
+        "Gender"
+    ],
+    "496": [
+        "Full Name"
+    ],
+    "498": [
+        "Fully Automatic (Mode 2)"
+    ],
+    "506": [
+        "GitHub Access Token"
+    ],
+    "494": [
+        "Frozen Lake"
+    ],
+    "492": [
+        "from trait "
+    ],
+    "501": [
+        "General Settings"
+    ],
+    "504": [
+        "Giant Bulk"
+    ],
+    "533": [
+        "Gives a weapon secondary projectiles (mode 2) modifier of"
+    ],
+    "526": [
+        "Gives a weapon minimum ST modifier of"
+    ],
+    "513": [
+        "Gives a spell level modifier of"
+    ],
+    "521": [
+        "Gives a weapon half-damage range modifier of"
+    ],
+    "528": [
+        "Gives a weapon parry modifier of"
+    ],
+    "511": [
+        "Gives a skill level modifier of"
+    ],
+    "524": [
+        "Gives a weapon minimum range modifier of"
+    ],
+    "536": [
+        "Gives a weapon shots per attack (mode 2) modifier of"
+    ],
+    "523": [
+        "Gives a weapon maximum reach modifier of"
+    ],
+    "515": [
+        "Gives a weapon accuracy modifier of"
+    ],
+    "514": [
+        "Gives a spell point modifier of"
+    ],
+    "535": [
+        "Gives a weapon shots per attack (mode 1) modifier of"
+    ],
+    "516": [
+        "Gives a weapon block modifier of"
+    ],
+    "529": [
+        "Gives a weapon recoil modifier of"
+    ],
+    "520": [
+        "Gives a weapon DR divisor modifier of"
+    ],
+    "512": [
+        "Gives a skill point modifier of"
+    ],
+    "508": [
+        "Gives a conditional modifier of"
+    ],
+    "530": [
+        "Gives a weapon reload time modifier of"
+    ],
+    "531": [
+        "Gives a weapon scope accuracy modifier of"
+    ],
+    "509": [
+        "Gives a DR bonus of"
+    ],
+    "519": [
+        "Gives a weapon damage modifier of"
+    ],
+    "545": [
+        "Group containers when sorting"
+    ],
+    "547": [
+        "Hair"
+    ],
+    "566": [
+        "Hide %s"
+    ],
+    "573": [
+        "Hiking Extra Effort Penalty"
+    ],
+    "540": [
+        "Go to next page"
+    ],
+    "537": [
+        "Gives an attribute modifier of"
+    ],
+    "556": [
+        "Hard-Light"
+    ],
+    "551": [
+        "Halve Move"
+    ],
+    "567": [
+        "Hide Others"
+    ],
+    "557": [
+        "Has"
+    ],
+    "550": [
+        "Halve Dodge (round up)"
+    ],
+    "544": [
+        "Group"
+    ],
+    "541": [
+        "Go to previous page"
+    ],
+    "571": [
+        "High-cyclic Controlled Bursts (Mode 2)"
+    ],
+    "543": [
+        "Green:"
+    ],
+    "570": [
+        "High-cyclic Controlled Bursts (Mode 1)"
+    ],
+    "560": [
+        "Has bipod"
+    ],
+    "558": [
+        "has"
+    ],
+    "563": [
+        "Heavy"
+    ],
+    "561": [
+        "has equipped equipment"
+    ],
+    "548": [
+        "half-damage range"
+    ],
+    "542": [
+        "Green"
+    ],
+    "562": [
+        "Header"
+    ],
+    "559": [
+        "Has Bipod"
+    ],
+    "554": [
+        "Halve Strength (round up; does not affect HP and damage)"
+    ],
+    "564": [
+        "Height"
+    ],
+    "588": [
+        "ID"
+    ],
+    "582": [
+        "Hours Spent"
+    ],
+    "592": [
+        "Image Export Resolution"
+    ],
+    "599": [
+        "Includes a Reaction Penalty for Failure"
+    ],
+    "583": [
+        "Hue"
+    ],
+    "594": [
+        "Import…"
+    ],
+    "584": [
+        "Hue:"
+    ],
+    "591": [
+        "Ignore weight for skills"
+    ],
+    "585": [
+        "i: Reload time is per shot"
+    ],
+    "590": [
+        "If your PDF is opening up to the wrong page when opening page references, enter an offset here to compensate."
+    ],
+    "587": [
+        "Icon Button Rollover"
+    ],
+    "589": [
+        "Identity"
+    ],
+    "596": [
+        "Inactive Selection"
+    ],
+    "577": [
+        "Hinted-Fill"
+    ],
+    "597": [
+        "Includes a Major Cost of Living Increase and Merchant Skill Penalty"
+    ],
+    "586": [
+        "Icon Button"
+    ],
+    "580": [
+        "Home"
+    ],
+    "579": [
+        "Hit Penalty"
+    ],
+    "593": [
+        "Images"
+    ],
+    "608": [
+        "Increment"
+    ],
+    "610": [
+        "Increment Points"
+    ],
+    "618": [
+        "Initial PDF Scale"
+    ],
+    "604": [
+        "Includes modifiers from:"
+    ],
+    "607": [
+        "Increase Uses"
+    ],
+    "614": [
+        "Initial Editor Scale"
+    ],
+    "609": [
+        "Increment Level"
+    ],
+    "617": [
+        "Initial Markdown Scale"
+    ],
+    "602": [
+        "Includes Fright Check Penalty"
+    ],
+    "603": [
+        "Includes modifiers from"
+    ],
+    "619": [
+        "Initial Points"
+    ],
+    "605": [
+        "Increase Skill Level"
+    ],
+    "606": [
+        "Increase Tech Level"
+    ],
+    "611": [
+        "Increment Quantity"
+    ],
+    "616": [
+        "Initial List Scale"
+    ],
+    "651": [
+        "JPEG"
+    ],
+    "627": [
+        "Integer"
+    ],
+    "639": [
+        "Inverse-Even-Odd"
+    ],
+    "646": [
+        "is at most"
+    ],
+    "633": [
+        "Invalid file data."
+    ],
+    "650": [
+        "Jet"
+    ],
+    "640": [
+        "Inverse-Winding"
+    ],
+    "645": [
+        "is at least"
+    ],
+    "626": [
+        "Insert %s"
+    ],
+    "658": [
+        "kilometer"
+    ],
+    "649": [
+        "Item"
+    ],
+    "636": [
+        "Invalid option: --%s"
+    ],
+    "654": [
+        "Jumping Extra Effort Penalty"
+    ],
+    "637": [
+        "invalid path"
+    ],
+    "630": [
+        "Interface Locale"
+    ],
+    "638": [
+        "Invalid value"
+    ],
+    "628": [
+        "Integer (Display Only)"
+    ],
+    "629": [
+        "Intensive Training"
+    ],
+    "625": [
+        "Insert"
+    ],
+    "657": [
+        "Kick"
+    ],
+    "635": [
+        "Invalid option: -%s"
+    ],
+    "623": [
+        "Inline & Tooltip"
+    ],
+    "656": [
+        "Keyboard"
+    ],
+    "631": [
+        "Interior Divider"
+    ],
+    "647": [
+        "is not"
+    ],
+    "644": [
+        "is anything"
+    ],
+    "632": [
+        "Intersect"
+    ],
+    "624": [
+        "Inner"
+    ],
+    "642": [
+        "Invisible"
+    ],
+    "659": [
+        "kilometers"
+    ],
+    "641": [
+        "Inverted"
+    ],
+    "653": [
+        "Jumping"
+    ],
+    "667": [
+        "LC0: Banned",
+        "LC1: Military",
+        "LC2: Restricted",
+        "LC3: Licensed",
+        "LC4: Open"
+    ],
+    "680": [
+        "Legal"
+    ],
+    "674": [
+        "Left"
+    ],
+    "683": [
+        "Letter"
+    ],
+    "663": [
+        "Large"
+    ],
+    "688": [
+        "Library Explorer"
+    ],
+    "684": [
+        "Level"
+    ],
+    "665": [
+        "LC"
+    ],
+    "682": [
+        "Length Units"
+    ],
+    "661": [
+        "Label"
+    ],
+    "671": [
+        "LC4: Open"
+    ],
+    "676": [
+        "Left-Command"
+    ],
+    "685": [
+        "Level Qualifier"
+    ],
+    "687": [
+        "Libraries"
+    ],
+    "675": [
+        "Left Margin"
+    ],
+    "679": [
+        "Left-Shift"
+    ],
+    "660": [
+        "Knowing Your Own Strength"
+    ],
+    "664": [
+        "Last Page"
+    ],
+    "700": [
+        "Link"
+    ],
+    "711": [
+        "Mailing Lists"
+    ],
+    "707": [
+        "M: Mounted. Ignore listed ST and Bulk when firing from its mount. Takes at least 3 Ready maneuvers to unmount or remount the weapon."
+    ],
+    "696": [
+        "Lightness"
+    ],
+    "701": [
+        "link"
+    ],
+    "698": [
+        "Linear"
+    ],
+    "692": [
+        "License: %s"
+    ],
+    "708": [
+        "Made a successful Hiking (B200) roll"
+    ],
+    "695": [
+        "Lighten"
+    ],
+    "693": [
+        "Lifting & Moving Things"
+    ],
+    "715": [
+        "Markdown"
+    ],
+    "706": [
+        "Luminosity"
+    ],
+    "694": [
+        "Light"
+    ],
+    "704": [
+        "Location"
+    ],
+    "716": [
+        "Markdown Guide"
+    ],
+    "702": [
+        "Load Attributes"
+    ],
+    "714": [
+        "Make a One-time Donation for %s Development"
+    ],
+    "705": [
+        "Log Path"
+    ],
+    "710": [
+        "Made a successful Skiing (B221) roll"
+    ],
+    "690": [
+        "Library Settings: %s"
+    ],
+    "734": [
+        "Maximum Reach"
+    ],
+    "730": [
+        "Maximum of 12 hours per day with no job"
+    ],
+    "725": [
+        "Maximum of 4 hours per day with a full-time job"
+    ],
+    "735": [
+        "maximum reach"
+    ],
+    "727": [
+        "Maximum of 8 hours per day"
+    ],
+    "731": [
+        "Maximum of 16 hours per day"
+    ],
+    "728": [
+        "Maximum of 8 hours per day with a full-time job"
+    ],
+    "723": [
+        "Max Load"
+    ],
+    "736": [
+        "Maximum Uses"
+    ],
+    "720": [
+        "Markov Run"
+    ],
+    "718": [
+        "Marker"
+    ],
+    "733": [
+        "maximum range"
+    ],
+    "737": [
+        "Maximum Uses: %d"
+    ],
+    "724": [
+        "Maximize"
+    ],
+    "721": [
+        "Master Library"
+    ],
+    "751": [
+        "Method Not Allowed"
+    ],
+    "746": [
+        "Menu Keys"
+    ],
+    "741": [
+        "Melee Weapon"
+    ],
+    "752": [
+        "Middle"
+    ],
+    "739": [
+        "Media"
+    ],
+    "738": [
+        "md"
+    ],
+    "747": [
+        "Menu Keys…"
+    ],
+    "748": [
+        "Meta"
+    ],
+    "740": [
+        "Medium"
+    ],
+    "749": [
+        "Meta-Trait"
+    ],
+    "745": [
+        "Menu"
+    ],
+    "762": [
+        "minimum ST"
+    ],
+    "757": [
+        "Minimum Range"
+    ],
+    "760": [
+        "minimum reach"
+    ],
+    "764": [
+        "Mirror"
+    ],
+    "763": [
+        "Minimum Strength"
+    ],
+    "753": [
+        "mile"
+    ],
+    "759": [
+        "Minimum Reach"
+    ],
+    "756": [
+        "Minimum"
+    ],
+    "785": [
+        "Multiply"
+    ],
+    "773": [
+        "Modulate"
+    ],
+    "771": [
+        "Modifier"
+    ],
+    "767": [
+        "Mixed"
+    ],
+    "766": [
+        "Miter"
+    ],
+    "774": [
+        "Monitor Resolution"
+    ],
+    "783": [
+        "Mud"
+    ],
+    "770": [
+        "Modified %s"
+    ],
+    "775": [
+        "Monospaced"
+    ],
+    "777": [
+        "Mountains"
+    ],
+    "786": [
+        "Muscle Powered"
+    ],
+    "772": [
+        "Modifiers"
+    ],
+    "776": [
+        "Morph"
+    ],
+    "782": [
+        "Move to Other Equipment"
+    ],
+    "791": [
+        "Name Qualifier"
+    ],
+    "795": [
+        "New Carried Equipment Container"
+    ],
+    "788": [
+        "Must be assigned to a college"
+    ],
+    "793": [
+        "Nearest"
+    ],
+    "794": [
+        "New Carried Equipment"
+    ],
+    "796": [
+        "New Character Sheet"
+    ],
+    "792": [
+        "Natural Attacks"
+    ],
+    "802": [
+        "New Equipment Modifiers Library"
+    ],
+    "804": [
+        "New Markdown File"
+    ],
+    "812": [
+        "New Ranged Weapon"
+    ],
+    "810": [
+        "New Other Equipment"
+    ],
+    "808": [
+        "New Note Container"
+    ],
+    "798": [
+        "New Character Template"
+    ],
+    "800": [
+        "New Equipment Modifier"
+    ],
+    "805": [
+        "New Melee Weapon"
+    ],
+    "821": [
+        "New Trait"
+    ],
+    "814": [
+        "New Skill"
+    ],
+    "816": [
+        "New Skills Library"
+    ],
+    "811": [
+        "New Other Equipment Container"
+    ],
+    "815": [
+        "New Skill Container"
+    ],
+    "807": [
+        "New Note"
+    ],
+    "801": [
+        "New Equipment Modifier Container"
+    ],
+    "820": [
+        "New Technique"
+    ],
+    "809": [
+        "New Notes Library"
+    ],
+    "799": [
+        "New Equipment Library"
+    ],
+    "818": [
+        "New Spell Container"
+    ],
+    "854": [
+        "NumPad-0"
+    ],
+    "832": [
+        "No Auto-Scaling"
+    ],
+    "837": [
+        "No School Grognard Damage"
+    ],
+    "829": [
+        "No"
+    ],
+    "845": [
+        "Not Found"
+    ],
+    "851": [
+        "Notes Qualifier"
+    ],
+    "847": [
+        "Note"
+    ],
+    "827": [
+        "Next Match"
+    ],
+    "834": [
+        "No files to process."
+    ],
+    "841": [
+        "Normal"
+    ],
+    "823": [
+        "New Trait Modifier"
+    ],
+    "826": [
+        "New Traits Library"
+    ],
+    "828": [
+        "Next Page"
+    ],
+    "836": [
+        "No recent files available"
+    ],
+    "844": [
+        "Not Applicable"
+    ],
+    "838": [
+        "non-chamber shots"
+    ],
+    "824": [
+        "New Trait Modifier Container"
+    ],
+    "850": [
+        "Notes"
+    ],
+    "831": [
+        "No additional modifiers"
+    ],
+    "840": [
+        "None Required"
+    ],
+    "852": [
+        "Number of matches found"
+    ],
+    "822": [
+        "New Trait Container"
+    ],
+    "833": [
+        "No export templates available"
+    ],
+    "855": [
+        "NumPad-1"
+    ],
+    "830": [
+        "No %s updates are available"
+    ],
+    "856": [
+        "NumPad-2"
+    ],
+    "853": [
+        "NumLock"
+    ],
+    "825": [
+        "New Trait Modifiers Library"
+    ],
+    "860": [
+        "NumPad-6"
+    ],
+    "865": [
+        "NumPad-Decimal"
+    ],
+    "861": [
+        "NumPad-7"
+    ],
+    "867": [
+        "NumPad-Enter"
+    ],
+    "859": [
+        "NumPad-5"
+    ],
+    "866": [
+        "NumPad-Divide"
+    ],
+    "863": [
+        "NumPad-9"
+    ],
+    "864": [
+        "NumPad-Add"
+    ],
+    "875": [
+        "of %d"
+    ],
+    "873": [
+        "Oblique"
+    ],
+    "871": [
+        "object"
+    ],
+    "878": [
+        "OK"
+    ],
+    "876": [
+        "of any kind"
+    ],
+    "877": [
+        "Off"
+    ],
+    "869": [
+        "NumPad-Minus"
+    ],
+    "879": [
+        "On"
+    ],
+    "872": [
+        "Object Weight"
+    ],
+    "881": [
+        "On Banding"
+    ],
+    "880": [
+        "On Background"
+    ],
+    "882": [
+        "On Content"
+    ],
+    "896": [
+        "On Search List"
+    ],
+    "886": [
+        "On Error"
+    ],
+    "885": [
+        "On Editable"
+    ],
+    "893": [
+        "On Page"
+    ],
+    "889": [
+        "On Inactive Selection"
+    ],
+    "884": [
+        "On Current Tab"
+    ],
+    "891": [
+        "On Marker"
+    ],
+    "892": [
+        "On Overloaded"
+    ],
+    "894": [
+        "On Page Standout"
+    ],
+    "902": [
+        "One-Handed Lift"
+    ],
+    "900": [
+        "On-the-Job Training"
+    ],
+    "899": [
+        "On Warning"
+    ],
+    "898": [
+        "On Tooltip"
+    ],
+    "916": [
+        "Option must have a value"
+    ],
+    "914": [
+        "Option --%[1]s does not allow an argument: %[2]s"
+    ],
+    "909": [
+        "Opening the link failed"
+    ],
+    "913": [
+        "Option %s requires an argument"
+    ],
+    "920": [
+        "or"
+    ],
+    "905": [
+        "Open Detail Editor"
+    ],
+    "906": [
+        "Open Each Page Reference"
+    ],
+    "917": [
+        "Option specification -%s already exists"
+    ],
+    "903": [
+        "One-Sided"
+    ],
+    "912": [
+        "Optimize For"
+    ],
+    "910": [
+        "Opens/closes all hierarchical rows"
+    ],
+    "915": [
+        "Option must be named"
+    ],
+    "908": [
+        "Open Page Reference"
+    ],
+    "911": [
+        "Open…"
+    ],
+    "923": [
+        "Original"
+    ],
+    "932": [
+        "Page Offset"
+    ],
+    "930": [
+        "Page %d of %d"
+    ],
+    "931": [
+        "Page Highlight"
+    ],
+    "926": [
+        "Overlay"
+    ],
+    "922": [
+        "Orientation"
+    ],
+    "921": [
+        "Organization"
+    ],
+    "929": [
+        "Page"
+    ],
+    "935": [
+        "Page Primary Labels"
+    ],
+    "937": [
+        "Page Ref"
+    ],
+    "947": [
+        "Page Void"
+    ],
+    "948": [
+        "PageDown"
+    ],
+    "940": [
+        "Page Reference Mappings…"
+    ],
+    "945": [
+        "Page Settings"
+    ],
+    "939": [
+        "Page Reference Mappings"
+    ],
+    "946": [
+        "Page Standout"
+    ],
+    "936": [
+        "Page Ranges"
+    ],
+    "934": [
+        "Page Primary Footer"
+    ],
+    "950": [
+        "Paper Size"
+    ],
+    "966": [
+        "per level"
+    ],
+    "963": [
+        "penalty for extra effort."
+    ],
+    "965": [
+        "per die"
+    ],
+    "974": [
+        "Plus"
+    ],
+    "967": [
+        "Per Shot"
+    ],
+    "973": [
+        "Player"
+    ],
+    "957": [
+        "PC"
+    ],
+    "972": [
+        "Plains, Level"
+    ],
+    "959": [
+        "PDF Link Highlight"
+    ],
+    "962": [
+        "penalty for extra effort"
+    ],
+    "955": [
+        "Path"
+    ],
+    "960": [
+        "PDF Marker Highlight"
+    ],
+    "958": [
+        "PDF"
+    ],
+    "953": [
+        "Parry Modifier"
+    ],
+    "971": [
+        "Pick %s %s worth"
+    ],
+    "956": [
+        "Pause"
+    ],
+    "970": [
+        "Pick %s"
+    ],
+    "978": [
+        "Point Pool Current"
+    ],
+    "981": [
+        "Point Record Changes"
+    ],
+    "980": [
+        "Point Pools"
+    ],
+    "976": [
+        "point"
+    ],
+    "983": [
+        "points"
+    ],
+    "977": [
+        "Point Cost"
+    ],
+    "990": [
+        "Pool Threshold Drag"
+    ],
+    "997": [
+        "Prerequisites"
+    ],
+    "998": [
+        "Prerequisites have not been met:"
+    ],
+    "996": [
+        "Prerequisite Count"
+    ],
+    "1003": [
+        "Preview"
+    ],
+    "1002": [
+        "Pressed Link"
+    ],
+    "991": [
+        "Portrait"
+    ],
+    "1000": [
+        "Pressed Control"
+    ],
+    "992": [
+        "Power Source"
+    ],
+    "1001": [
+        "Pressed Icon Button"
+    ],
+    "993": [
+        "ppi"
+    ],
+    "1016": [
+        "projectile"
+    ],
+    "1012": [
+        "Processed 1 file"
+    ],
+    "1014": [
+        "Processing %s"
+    ],
+    "1017": [
+        "projectiles"
+    ],
+    "1004": [
+        "Previous Match"
+    ],
+    "1008": [
+        "Print"
+    ],
+    "1015": [
+        "Professional Teacher"
+    ],
+    "1007": [
+        "Primary Separator"
+    ],
+    "1005": [
+        "Previous Page"
+    ],
+    "1006": [
+        "Primary Attributes"
+    ],
+    "1034": [
+        "Randomize the name using the current ancestry"
+    ],
+    "1026": [
+        "Rain"
+    ],
+    "1031": [
+        "Randomize the hair using the current ancestry"
+    ],
+    "1027": [
+        "Randomize the age using the current ancestry"
+    ],
+    "1036": [
+        "Randomize the weight using the current ancestry"
+    ],
+    "1020": [
+        "Punch"
+    ],
+    "1023": [
+        "Quirks"
+    ],
+    "1037": [
+        "Range"
+    ],
+    "1035": [
+        "Randomize the skin using the current ancestry"
+    ],
+    "1033": [
+        "Randomize the height using the current ancestry"
+    ],
+    "1030": [
+        "Randomize the gender using the current ancestry"
+    ],
+    "1025": [
+        "R: Uses a Musket Rest. Any aimed shot fired while stationary and standing up is automatically braced (add +1 to Accuracy)."
+    ],
+    "1024": [
+        "Quit"
+    ],
+    "1043": [
+        "Rate of Fire"
+    ],
+    "1045": [
+        "Rated ST "
+    ],
+    "1041": [
+        "Ranged Weapons"
+    ],
+    "1046": [
+        "Reach"
+    ],
+    "1039": [
+        "Ranged Weapon"
+    ],
+    "1040": [
+        "Ranged Weapon Usage"
+    ],
+    "1044": [
+        "Rated ST"
+    ],
+    "1048": [
+        "Reaction"
+    ],
+    "1056": [
+        "Reconciliation"
+    ],
+    "1050": [
+        "Reaction Modifiers"
+    ],
+    "1061": [
+        "Reduces the attribute cost of"
+    ],
+    "1058": [
+        "Red"
+    ],
+    "1060": [
+        "Redo %s"
+    ],
+    "1059": [
+        "Red:"
+    ],
+    "1054": [
+        "Recoil"
+    ],
+    "1052": [
+        "Reason"
+    ],
+    "1066": [
+        "Reduction for Talent level 3"
+    ],
+    "1065": [
+        "Reduction for Talent level 2"
+    ],
+    "1067": [
+        "Reduction for Talent level 4"
+    ],
+    "1070": [
+        "Release Notes"
+    ],
+    "1069": [
+        "Relative Skill Level"
+    ],
+    "1068": [
+        "Regular"
+    ],
+    "1077": [
+        "Remove Hit Location"
+    ],
+    "1080": [
+        "Remove Sub-Table"
+    ],
+    "1078": [
+        "Remove hit location"
+    ],
+    "1082": [
+        "Rename"
+    ],
+    "1084": [
+        "Repeat"
+    ],
+    "1085": [
+        "Repository"
+    ],
+    "1090": [
+        "Requires at least 1 point in the skill named "
+    ],
+    "1099": [
+        "Retracting Stock"
+    ],
+    "1103": [
+        "Reverse-Difference"
+    ],
+    "1106": [
+        "Right-Command"
+    ],
+    "1104": [
+        "Right"
+    ],
+    "1109": [
+        "Right-Shift"
+    ],
+    "1112": [
+        "Ritual: speak a word or two OR make a small gesture"
+    ],
+    "1119": [
+        "RoF"
+    ],
+    "1124": [
+        "Round Down"
+    ],
+    "1123": [
+        "Round"
+    ],
+    "1117": [
+        "Road, Paved"
+    ],
+    "1115": [
+        "Road, Dirt"
+    ],
+    "1116": [
+        "Road, Gravel"
+    ],
+    "1122": [
+        "Rotate"
+    ],
+    "1113": [
+        "Ritual: speak quietly and make a gesture"
+    ],
+    "1135": [
+        "Scale"
+    ],
+    "1128": [
+        "Sand, Hard-packed"
+    ],
+    "1141": [
+        "scope accuracy"
+    ],
+    "1133": [
+        "Save changes made to",
+        "%s?"
+    ],
+    "1136": [
+        "Scale Down"
+    ],
+    "1132": [
+        "Save As…"
+    ],
+    "1138": [
+        "Scaling"
+    ],
+    "1139": [
+        "Scope"
+    ],
+    "1127": [
+        "Sand"
+    ],
+    "1134": [
+        "Save…"
+    ],
+    "1137": [
+        "Scale Up"
+    ],
+    "1152": [
+        "Secondary Fields"
+    ],
+    "1153": [
+        "Secondary Projectiles"
+    ],
+    "1148": [
+        "Search"
+    ],
+    "1147": [
+        "ScrollLock"
+    ],
+    "1144": [
+        "Scroll Edge"
+    ],
+    "1149": [
+        "Search List"
+    ],
+    "1146": [
+        "Scroll Wheel Multiplier"
+    ],
+    "1145": [
+        "Scroll Rollover"
+    ],
+    "1143": [
+        "Scroll"
+    ],
+    "1154": [
+        "secondary projectiles"
+    ],
+    "1169": [
+        "Set"
+    ],
+    "1160": [
+        "Selection"
+    ],
+    "1156": [
+        "seconds"
+    ],
+    "1166": [
+        "Semi-Expanded"
+    ],
+    "1157": [
+        "Select All"
+    ],
+    "1168": [
+        "Services"
+    ],
+    "1162": [
+        "Self-Control Roll Adjustment"
+    ],
+    "1165": [
+        "Semi-Condensed"
+    ],
+    "1159": [
+        "Select Modifiers for"
+    ],
+    "1158": [
+        "Select Image…"
+    ],
+    "1170": [
+        "Set Portrait"
+    ],
+    "1173": [
+        "Settings"
+    ],
+    "1171": [
+        "Set the weapon flag"
+    ],
+    "1180": [
+        "shot"
+    ],
+    "1174": [
+        "Settings Path"
+    ],
+    "1179": [
+        "Short Name"
+    ],
+    "1172": [
+        "Sets the width of each column to fit its contents"
+    ],
+    "1177": [
+        "Shift Slightly"
+    ],
+    "1176": [
+        "Sheet Settings…"
+    ],
+    "1181": [
+        "Shot Duration"
+    ],
+    "1187": [
+        "shots per attack"
+    ],
+    "1189": [
+        "Show All"
+    ],
+    "1185": [
+        "shots"
+    ],
+    "1183": [
+        "Shot Recoil"
+    ],
+    "1184": [
+        "Shots"
+    ],
+    "1191": [
+        "Show on Disk"
+    ],
+    "1188": [
+        "Shove & Knock Over"
+    ],
+    "1186": [
+        "Shots Per Attack"
+    ],
+    "1198": [
+        "Size Modifier"
+    ],
+    "1195": [
+        "Sides"
+    ],
+    "1192": [
+        "Show spell ritual, cost & time adjustments"
+    ],
+    "1199": [
+        "Skill"
+    ],
+    "1193": [
+        "Show the title instead of the name in the footer"
+    ],
+    "1194": [
+        "Show trait modifier cost adjustments"
+    ],
+    "1197": [
+        "Size"
+    ],
+    "1204": [
+        "Skill Specialization"
+    ],
+    "1205": [
+        "Skills"
+    ],
+    "1226": [
+        "Square"
+    ],
+    "1212": [
+        "Small"
+    ],
+    "1224": [
+        "Spells"
+    ],
+    "1222": [
+        "Spell Qualifier"
+    ],
+    "1210": [
+        "Slug Recoil"
+    ],
+    "1223": [
+        "spell(s)"
+    ],
+    "1217": [
+        "Solid"
+    ],
+    "1215": [
+        "Social"
+    ],
+    "1227": [
+        "Src"
+    ],
+    "1221": [
+        "Spell"
+    ],
+    "1209": [
+        "Slots"
+    ],
+    "1211": [
+        "SM Reduction"
+    ],
+    "1243": [
+        "Sub-Roll"
+    ],
+    "1237": [
+        "State"
+    ],
+    "1232": [
+        "ST"
+    ],
+    "1233": [
+        "Standard"
+    ],
+    "1236": [
+        "starts with"
+    ],
+    "1239": [
+        "Stroke-And-Fill"
+    ],
+    "1238": [
+        "Stroke"
+    ],
+    "1231": [
+        "Src-Over"
+    ],
+    "1241": [
+        "Study"
+    ],
+    "1234": [
+        "Start"
+    ],
+    "1240": [
+        "Studied %v of %s hours"
+    ],
+    "1248": [
+        "Swing = Thrust+2"
+    ],
+    "1260": [
+        "Tag Filter"
+    ],
+    "1257": [
+        "Tab"
+    ],
+    "1253": [
+        "T Bone's New Damage for ST (option 1)"
+    ],
+    "1246": [
+        "Swamp"
+    ],
+    "1256": [
+        "T Bone's New Damage for ST (option 2, cleaned)"
+    ],
+    "1247": [
+        "Swap Defaults"
+    ],
+    "1254": [
+        "T Bone's New Damage for ST (option 1, cleaned)"
+    ],
+    "1245": [
+        "sw (leveled)"
+    ],
+    "1251": [
+        "System (Small)"
+    ],
+    "1275": [
+        "The base value, which may be a number or a formula"
+    ],
+    "1263": [
+        "tags"
+    ],
+    "1266": [
+        "Technique Default Adjustment"
+    ],
+    "1271": [
+        "Terrain:"
+    ],
+    "1261": [
+        "Tag Qualifier"
+    ],
+    "1276": [
+        "The color to use when dark mode is enabled"
+    ],
+    "1267": [
+        "Technique Default Skill Name"
+    ],
+    "1265": [
+        "Technique"
+    ],
+    "1270": [
+        "Template Choices"
+    ],
+    "1264": [
+        "Tech Level"
+    ],
+    "1262": [
+        "Tags"
+    ],
+    "1269": [
+        "Template Choice Quantifier"
+    ],
+    "1279": [
+        "The data was written with a newer version of %[1]s and cannot be loaded. Please update %[1]s and try again."
+    ],
+    "1278": [
+        "The cost per point difference from the base"
+    ],
+    "1283": [
+        "The dodge for the %s encumbrance level"
+    ],
+    "1281": [
+        "The dice to roll on the sub-table"
+    ],
+    "1284": [
+        "The DR covering the %s hit location%s"
+    ],
+    "1288": [
+        "The ground movement rate for the %s encumbrance level"
+    ],
+    "1290": [
+        "The library cannot be updated while",
+        "documents from the library are open."
+    ],
+    "1296": [
+        "The name of this body type"
+    ],
+    "1293": [
+        "The mana cost to maintain the spell"
+    ],
+    "1295": [
+        "The name of this attribute, often an abbreviation"
+    ],
+    "1299": [
+        "The number of consecutive numbers this hit location fills in the table"
+    ],
+    "1297": [
+        "The name of this hit location as it should appear in choice lists"
+    ],
+    "1298": [
+        "The name of this hit location as it should appear in the hit location table"
+    ],
+    "1304": [
+        "The skill adjustment for this hit location"
+    ],
+    "1301": [
+        "The object is too heavy for you to throw"
+    ],
+    "1300": [
+        "The number of uses remaining"
+    ],
+    "1306": [
+        "The teacher must have the skill/spell/trait being taught at the same or higher level than you, or have as many or more points spent in it as you do"
+    ],
+    "1308": [
+        "The template contains an Ancestry (%s).",
+        "Disable your character's existing Ancestry (%s)?"
+    ],
+    "1311": [
+        "The value of one of these pieces of equipment"
+    ],
+    "1307": [
+        "The teacher must have the Teaching skill at 12+"
+    ],
+    "1315": [
+        "The weight of an object that can be shoved and knocked over"
+    ],
+    "1319": [
+        "The weight that can be lifted overhead with both hands in four seconds"
+    ],
+    "1317": [
+        "The weight of one of these pieces of equipment"
+    ],
+    "1333": [
+        "Throwing Extra Effort Penalty"
+    ],
+    "1323": [
+        "There is no valid mapping for page reference key \\\"%s\\\".",
+        "Would you like to create one by choosing a PDF to map to this key?"
+    ],
+    "1334": [
+        "Thrown"
+    ],
+    "1329": [
+        "This weapon fires %v %s per attack and each shot releases %v smaller %s."
+    ],
+    "1331": [
+        "Threshold"
+    ],
+    "1325": [
+        "these libraries"
+    ],
+    "1330": [
+        "thr (leveled)"
+    ],
+    "1326": [
+        "Thin"
+    ],
+    "1338": [
+        "times the current encumbrance level"
+    ],
+    "1336": [
+        "Thrust = Swing-2"
+    ],
+    "1337": [
+        "Time"
+    ],
+    "1356": [
+        "to original weight"
+    ],
+    "1347": [
+        "to base weight"
+    ],
+    "1348": [
+        "to cost"
+    ],
+    "1344": [
+        "to all locations"
+    ],
+    "1345": [
+        "to base cost"
+    ],
+    "1350": [
+        "to final base cost"
+    ],
+    "1358": [
+        "to the"
+    ],
+    "1351": [
+        "to final base weight"
+    ],
+    "1355": [
+        "to original cost"
+    ],
+    "1342": [
+        "to"
+    ],
+    "1354": [
+        "to leveled cost only"
+    ],
+    "1353": [
+        "to final weight"
+    ],
+    "1367": [
+        "Toggle"
+    ],
+    "1363": [
+        "to this weapon"
+    ],
+    "1361": [
+        "to the spell whose name"
+    ],
+    "1364": [
+        "to true"
+    ],
+    "1359": [
+        "to the college whose name"
+    ],
+    "1366": [
+        "to weapons whose required skill name"
+    ],
+    "1377": [
+        "Tooltip Dismissal"
+    ],
+    "1369": [
+        "Toggle Enablement"
+    ],
+    "1380": [
+        "Top Margin"
+    ],
+    "1376": [
+        "Tooltip Delay"
+    ],
+    "1379": [
+        "Top"
+    ],
+    "1378": [
+        "Tooltip Marker"
+    ],
+    "1375": [
+        "Tooltip"
+    ],
+    "1383": [
+        "Total points spent on an ancestry package"
+    ],
+    "1388": [
+        "Total points spent on spells"
+    ],
+    "1384": [
+        "Total points spent on attributes"
+    ],
+    "1385": [
+        "Total points spent on disadvantages"
+    ],
+    "1382": [
+        "Total points spent on advantages"
+    ],
+    "1391": [
+        "Trait Modifiers"
+    ],
+    "1393": [
+        "Translate"
+    ],
+    "1396": [
+        "Tray"
+    ],
+    "1395": [
+        "Translations Path"
+    ],
+    "1390": [
+        "Trait Modifier"
+    ],
+    "1399": [
+        "triggering condition"
+    ],
+    "1394": [
+        "Translations dir: \\\"%s\\\""
+    ],
+    "1398": [
+        "Triggering Condition"
+    ],
+    "1406": [
+        "Type"
+    ],
+    "1400": [
+        "Two-handed"
+    ],
+    "1410": [
+        "Unable to access the %s update site"
+    ],
+    "1411": [
+        "Unable to check out '%s'"
+    ],
+    "1408": [
+        "Ultra-Condensed"
+    ],
+    "1412": [
+        "Unable to clone repository"
+    ],
+    "1417": [
+        "Unable to create print dialog."
+    ],
+    "1419": [
+        "Unable to create:",
+        "%s"
+    ],
+    "1413": [
+        "Unable to create file dialog."
+    ],
+    "1414": [
+        "Unable to create new folder dialog"
+    ],
+    "1418": [
+        "Unable to create rename dialog"
+    ],
+    "1424": [
+        "Unable to fetch"
+    ],
+    "1422": [
+        "Unable to export as PNG!"
+    ],
+    "1421": [
+        "Unable to export as PDF!"
+    ],
+    "1431": [
+        "Unable to open file"
+    ],
+    "1427": [
+        "Unable to load image"
+    ],
+    "1430": [
+        "Unable to open %s"
+    ],
+    "1428": [
+        "Unable to load template"
+    ],
+    "1434": [
+        "Unable to open web page for download"
+    ],
+    "1441": [
+        "Unable to resolve path"
+    ],
+    "1437": [
+        "Unable to remove directory:",
+        "%s"
+    ],
+    "1432": [
+        "Unable to open link"
+    ],
+    "1433": [
+        "Unable to open markdown"
+    ],
+    "1440": [
+        "Unable to resolve absolute path"
+    ],
+    "1435": [
+        "Unable to open: %s"
+    ],
+    "1453": [
+        "Unable to update"
+    ],
+    "1452": [
+        "Unable to show location on disk"
+    ],
+    "1455": [
+        "Unable to use external PDF command line"
+    ],
+    "1446": [
+        "Unable to retrieve tags"
+    ],
+    "1444": [
+        "Unable to retrieve local repository information"
+    ],
+    "1445": [
+        "Unable to retrieve revision date"
+    ],
+    "1447": [
+        "Unable to save "
+    ],
+    "1442": [
+        "Unable to retrieve branches"
+    ],
+    "1465": [
+        "unrecognized key (%s)"
+    ],
+    "1463": [
+        "Unknown prerequisite type: %s"
+    ],
+    "1460": [
+        "Units of Measurement"
+    ],
+    "1458": [
+        "Undock From Workspace"
+    ],
+    "1464": [
+        "Unmodified"
+    ],
+    "1459": [
+        "Union"
+    ],
+    "1457": [
+        "Undo %s"
+    ],
+    "1469": [
+        "untitled"
+    ],
+    "1468": [
+        "Unspent"
+    ],
+    "1470": [
+        "untitled choice"
+    ],
+    "1466": [
+        "unrecognized key (%s) for body type (%s)"
+    ],
+    "1474": [
+        "Unweighted American Male"
+    ],
+    "1471": [
+        "untitled location"
+    ],
+    "1467": [
+        "Unsatisfied prerequisite(s)"
+    ],
+    "1478": [
+        "Update canceled"
+    ],
+    "1476": [
+        "Update"
+    ],
+    "1486": [
+        "Use Half-Stat Defaults"
+    ],
+    "1479": [
+        "Updating %s to v%s…"
+    ],
+    "1477": [
+        "Update %s to v%s?"
+    ],
+    "1480": [
+        "Updating…"
+    ],
+    "1475": [
+        "Up"
+    ],
+    "1482": [
+        "Usage"
+    ],
+    "1481": [
+        "Upright"
+    ],
+    "1496": [
+        "Using skates"
+    ],
+    "1494": [
+        "Uses a Musket Rest"
+    ],
+    "1495": [
+        "Uses a musket rest"
+    ],
+    "1493": [
+        "Uses"
+    ],
+    "1489": [
+        "Use Separate Windows For…"
+    ],
+    "1491": [
+        "User Guide"
+    ],
+    "1490": [
+        "User Description"
+    ],
+    "1488": [
+        "Use Multiplicative Modifiers"
+    ],
+    "1502": [
+        "Version "
+    ],
+    "1505": [
+        "VTT Notes"
+    ],
+    "1504": [
+        "View"
+    ],
+    "1503": [
+        "Version %s"
+    ],
+    "1499": [
+        "value"
+    ],
+    "1497": [
+        "Using skis"
+    ],
+    "1518": [
+        "When"
+    ],
+    "1509": [
+        "Weather:"
+    ],
+    "1514": [
+        "Weight Adjustment"
+    ],
+    "1507": [
+        "Weapon Accuracy"
+    ],
+    "1517": [
+        "Weight Units"
+    ],
+    "1512": [
+        "WEBP"
+    ],
+    "1516": [
+        "Weight Qualifier"
+    ],
+    "1515": [
+        "Weight Modifier"
+    ],
+    "1519": [
+        "When Tech Level"
+    ],
+    "1524": [
+        "which"
+    ],
+    "1530": [
+        "Within this view, these keys have the following effects:"
+    ],
+    "1521": [
+        "Where to display…"
+    ],
+    "1520": [
+        "When the Tech Level"
+    ],
+    "1527": [
+        "Winding"
+    ],
+    "1523": [
+        "Whether this piece of equipment is equipped or just carried. Items that are not equipped do not apply any features they may normally contribute to the character."
+    ],
+    "1528": [
+        "Window"
+    ],
+    "1542": [
+        "×"
+    ],
+    "1537": [
+        "yard"
+    ],
+    "1535": [
+        "X-Heavy"
+    ],
+    "1536": [
+        "Xor"
+    ],
+    "1534": [
+        "x"
+    ],
+    "1538": [
+        "Yes"
+    ],
+    "1544": [
+        "‡: Requires two hands and becomes unready after you attack with it. If you have at least ST %v, you can used it two-handed without it becoming unready. If you have at least ST %v, you can use it one-handed with no readiness penalty."
+    ],
+    "1522": [
+        "Whether this item is enabled. Items that are not enabled do not apply any features they may normally contribute to the character."
+    ],
+    "1095": [
+        "Reset Body Type"
+    ],
+    "302": [
+        "Converts all files specified on the command line to the current data format. If a directory is specified, it will be traversed recursively and all files found will be converted. This operation is intended to easily bring files up to the current version's data format. After all files have been processed, GCS will exit"
+    ],
+    "1473": [
+        "Unweighted American Last"
+    ],
+    "187": [
+        "Are you sure you want to reset %s?"
+    ],
+    "43": [
+        " per full day"
+    ],
+    "1310": [
+        "The value of all of these pieces of equipment, plus the value of any contained equipment"
+    ],
+    "136": [
+        "Accuracy"
+    ],
+    "789": [
+        "Must specify a command name"
+    ],
+    "114": [
+        "A1"
+    ],
+    "1175": [
+        "Sheet Settings"
+    ],
+    "175": [
+        "Any notes for VTT use; see the instructions for your VVT to determine if/how these can be used"
+    ],
+    "1312": [
+        "The weapon has a minimum ST of %v. If your ST is less than this, you will suffer a -1 to weapon skill per point of ST you lack and lose one extra FP at the end of any fight that lasts long enough to cost FP."
+    ],
+    "129": [
+        "A snippet of text to highlight on the page when opening the page reference; only needed if the default behavior isn't highlighting the expected area"
+    ],
+    "1092": [
+        "requires at least one of:"
+    ],
+    "868": [
+        "NumPad-Equal"
+    ],
+    "1155": [
+        "Secondary Separator"
+    ],
+    "1178": [
+        "Shift-Click or %v-Click to select more than one"
+    ],
+    "73": [
+        "%s meters"
+    ],
+    "1083": [
+        "Rendering page %d…"
+    ],
+    "145": [
+        "Add Pool Threshold"
+    ],
+    "1064": [
+        "Reduction for Talent level 1"
+    ],
+    "99": [
+        "+%d%% Cost of Living Increase"
+    ],
+    "95": [
+        "*From [T Bone's Games Diner](https://www.gamesdiner.com/rules-nugget-gurps-new-damage-for-st/)*"
+    ],
+    "17": [
+        "600% Scale"
+    ],
+    "37": [
+        " game, which is used by permission of Steve Jackson Games."
+    ],
+    "1294": [
+        "The maximum load that can be carried and still remain within the %s encumbrance level"
+    ],
+    "518": [
+        "Gives a weapon chamber shots modifier of"
+    ],
+    "1110": [
+        "Ritual: need both hands and feet free and must speak; Time: 2x"
+    ],
+    "1415": [
+        "Unable to create new markdown file"
+    ],
+    "1101": [
+        "Reverse Landscape"
+    ],
+    "49": [
+        "!: This weapon can only fire on full automatic. Minimum RoF is %v."
+    ],
+    "1038": [
+        "Range In Miles"
+    ],
+    "10": [
+        "50% Scale"
+    ],
+    "1291": [
+        "The locale to use when presenting text in the user interface. This does not affect the content of data files. Leave this value blank to use the system default. Note that changes to this generally require quitting and restarting GCS to have the desired effect."
+    ],
+    "1397": [
+        "treats the attack as braced (add +1 to Accuracy)."
+    ],
+    "1098": [
+        "Restore"
+    ],
+    "1472": [
+        "Unweighted American Female"
+    ],
+    "517": [
+        "Gives a weapon bulk modifier of"
+    ],
+    "907": [
+        "Open one or more other character sheets first."
+    ],
+    "1274": [
+        "the attribute"
+    ],
+    "726": [
+        "Maximum of 4 hours per day with a part-time job"
+    ],
+    "66": [
+        "%s (%s per level)"
+    ],
+    "634": [
+        "Invalid option specification: %v"
+    ],
+    "1235": [
+        "Starts the web server and does not bring up the user interface. If the server has not been configured, just exits"
+    ],
+    "309": [
+        "Copyright © %[1]s by %[2]s%[3]s All rights reserved."
+    ],
+    "1492": [
+        "User Library"
+    ],
+    "1063": [
+        "reduces the ST requirement to %v and "
+    ],
+    "1327": [
+        "This file does not contain the expected data."
+    ],
+    "870": [
+        "NumPad-Multiply"
+    ],
+    "1501": [
+        "Value must be no more than %s"
+    ],
+    "28": [
+        " a trait whose name "
+    ],
+    "1273": [
+        "The amount of DR this hit location grants due to natural toughness"
+    ],
+    "495": [
+        "Frozen River"
+    ],
+    "1062": [
+        "Reduces the contained weight by"
+    ],
+    "1087": [
+        "Requires a skill named "
+    ],
+    "167": [
+        "and"
+    ],
+    "1286": [
+        "The full name of this attribute (may be omitted, in which case the Short Name will be used instead)"
+    ],
+    "1302": [
+        "The output file may not be an empty path."
+    ],
+    "532": [
+        "Gives a weapon secondary projectiles (mode 1) modifier of"
+    ],
+    "452": [
+        "F: Fencing weapon. When retreating, your Parry is %v (instead of %v). You suffer a -2 cumulative penalty for multiple parries after the first on the same turn instead of the usual -4. Flails cannot be parried by this weapon."
     ]
 }
