@@ -1,0 +1,32 @@
+
+name: Trantojson
+
+on: 
+  schedule:
+    - cron:  '0 3 * * *'
+  workflow_dispatch:
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+        matrix:
+          python-version: ["3.11"] 
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: trantojson
+        run: |
+          download_url=curl -s https://api.github.com/repos/richardwilkes/gcs/releases/latest|grep -i language.i18n |grep -i download|awk -F '[\"]' '{print $4}'
+          curl -L -o  language.i18n $download_url
+
+                    
+      #- name: Add & Commit
+      #  uses: EndBug/add-and-commit@v9.1.4
+      #  with:
+      #    add: "gcs_master_library_en_json"
+
+
+        
