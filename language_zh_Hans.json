@@ -1,18 +1,18 @@
 {
     "8": [
-        "1 yard"
+        "1 码"
     ],
     "31": [
-        " and tech level matches"
+        " 和技术水平匹配"
     ],
     "36": [
-        " Files"
+        " 文件"
     ],
     "45": [
         " pt]"
     ],
     "57": [
-        "% per level"
+        "% 每个级别"
     ],
     "82": [
         "%v%v or %v%v"
@@ -957,7 +957,7 @@
         "Two-handed & unready"
     ],
     "26": [
-        " a contained weight which "
+        " 包含的重量 "
     ],
     "849": [
         "Note: This action will NOT remove any files from disk."
@@ -999,7 +999,7 @@
         "Italic"
     ],
     "40": [
-        " or "
+        " 或 "
     ],
     "1013": [
         "Processed %d files"
@@ -1044,7 +1044,7 @@
         "are not"
     ],
     "63": [
-        "%d Reaction Penalty"
+        "%d 反应减值"
     ],
     "1443": [
         "Unable to retrieve checked out revision"
@@ -1080,7 +1080,7 @@
         "Options:"
     ],
     "58": [
-        "%d Action Penalty"
+        "%d 行动减值"
     ],
     "123": [
         "A explanation of the effects of the threshold state"
@@ -1095,7 +1095,7 @@
         "Total points spent on skills"
     ],
     "38": [
-        " is a trademark of Steve Jackson Games, used by permission. All rights reserved."
+        " 是 Steve Jackson Games 的商标，经许可使用。保留所有权利。"
     ],
     "451": [
         "Eyes"
@@ -1119,7 +1119,7 @@
         "\\\"+5 lb\\\", \\\"-5 lb\\\", \\\"x10%\\\", \\\"x3\\\", \\\"x2/3\\\""
     ],
     "30": [
-        " and level "
+        " 和等级 "
     ],
     "314": [
         "Cost per Point"
@@ -1226,25 +1226,25 @@
         "Points Record for %s"
     ],
     "5": [
-        "1 foot"
+        "1 英尺"
     ],
     "0": [
         "# 生成于 Sat, 13 Jan 2024 11:17:01 PST\n",
         "#\n",
-        "# Key-value pairs are defined as one or more lines prefixed with \" for the\n",
-        "# prefixes are then followed by a quoted string, using escaping rules for Go\n",
-        "# strings where needed. When two or more lines are present in a row, they will\n",
-        "# be concatenated together with an intervening \\n character.\n",
+        "# 键值对被定义为一行或多行，前缀为\n",
+        "# 前缀后跟一个带引号的字符串，使用 Go 的转义规则\n",
+        "# 字符串。当连续出现两行或多行时，它们将\n",
+        "# 与中间的 \\n 字符连接在一起。\n",
         "#\n",
-        "# Do NOT modify the 'k' values. They are the values as seen in the code.\n",
+        "#不要修改“k”行的值。它们是代码中的值。\n",
         "#\n",
-        "# Replace the 'v' values with the appropriate translation.\n"
+        "#将“v”值替换为适当的翻译。\n"
     ],
     "1531": [
         "World1"
     ],
     "59": [
-        "%d editors will be opened."
+        "将打开 %d 个编辑器。"
     ],
     "1487": [
         "Use Modifying Dice + Adds"
@@ -1333,8 +1333,8 @@
     ],
     "21": [
         null,
-        "Holding down the %s key while using",
-        "the mouse wheel will change the scale."
+        "使用时按住 %s 键",
+        "鼠标滚轮将更改比例。"
     ],
     "105": [
         "- predefined color name, e.g. \\\"Yellow\\\""
@@ -1355,10 +1355,10 @@
         "Required"
     ],
     "12": [
-        "100% Scale"
+        "100% 比例"
     ],
     "71": [
-        "%s inches"
+        "%s 英寸"
     ],
     "1321": [
         "The weight that can be lifted overhead with one hand in two seconds"
@@ -1383,7 +1383,7 @@
     ],
     "22": [
         null,
-        "This key is normally mapped to a PDF named:",
+        "该键通常映射到一个 PDF 文件，其名为：",
         "%s"
     ],
     "874": [
@@ -1423,103 +1423,103 @@
         "%sHas equipment which is equipped and whose name %s"
     ],
     "3": [
-        "0-255 or 0-100%"
+        "0-255 或 0-100%"
     ],
     "4": [
-        "0-360 or 0-100%"
+        "0-360 或 0-100%"
     ],
     "2": [
         "0-100%"
     ],
     "1": [
-        "0 of 0"
+        "0 之 0"
     ],
     "9": [
-        "25% Scale"
+        "25% 比例"
     ],
     "7": [
-        "1 meter"
+        "1 米"
     ],
     "6": [
-        "1 inch"
+        "1 英寸"
     ],
     "13": [
-        "200% Scale"
+        "200% 比例"
     ],
     "16": [
-        "500% Scale"
+        "500% 比例"
     ],
     "11": [
-        "75% Scale"
+        "75% 比例"
     ],
     "14": [
-        "300% Scale"
+        "300% 比例"
     ],
     "15": [
-        "400% Scale"
+        "400% 比例"
     ],
     "18": [
         null,
         null,
-        "Requires these tags:",
+        "需要这些标签：",
         "● "
     ],
     "19": [
         null,
         null,
-        "Second mode:"
+        "第二模式："
     ],
     "20": [
         null,
-        "Encumbrance [%s]"
+        "负重 [%s]"
     ],
     "23": [
-        " %[1]s [%[1]s options]"
+        " %[1]s [%[1]s 选项]"
     ],
     "24": [
-        " <command> [command options]"
+        " <命令> [命令选项]"
     ],
     "25": [
-        " a contained quantity which "
+        " 包含的数量 "
     ],
     "27": [
-        " a skill whose name "
+        " 一个技能，其名为 "
     ],
     "32": [
-        " attacks]"
+        " 攻击]"
     ],
     "33": [
-        " Block"
+        " 盾挡"
     ],
     "34": [
-        " Default: "
+        " 默认值： "
     ],
     "29": [
         " against "
     ],
     "35": [
-        " Dodge"
+        " 闪避"
     ],
     "39": [
-        " level "
+        " 等级 "
     ],
     "41": [
-        " Parry"
+        " 招架"
     ],
     "42": [
-        " per die)"
+        " 每骰）"
     ],
     "48": [
-        " which "
+        " 其中 "
     ],
     "47": [
-        " to skill level due to minimum ST requirement"
+        " 达到最低 ST 要求的技能水平"
     ],
     "44": [
         " pts]"
     ],
     "46": [
-        " to "
+        " 到 "
     ],
     "54": [
         "#"
@@ -1534,34 +1534,34 @@
         "\\\"+5 lb\\\", \\\"-5 lb\\\", \\\"+10%\\\", \\\"-10%\\\""
     ],
     "55": [
-        "#: This weapon can fire in high cyclic controlled bursts, reducing Recoil to 1."
+        "#：该武器可进行高循环可控连发射击，将后坐力降至 1。"
     ],
     "61": [
-        "%d Fright Check Penalty"
+        "%d 恐惧检定减值"
     ],
     "60": [
-        "%d files will be opened."
+        "将打开 %d 个文件。"
     ],
     "62": [
-        "%d of %d"
+        "%d 之 %d"
     ],
     "67": [
-        "%s Changes"
+        "%s 更改"
     ],
     "68": [
-        "%s Container"
+        "%s 容器"
     ],
     "69": [
-        "%s Editor for %s"
+        "%s 编辑器给 %s"
     ],
     "70": [
-        "%s feet"
+        "%s 英尺"
     ],
     "65": [
-        "%s (%s per die, per level)"
+        "%s（%s 每骰，每个级别）"
     ],
     "64": [
-        "%s (%s per die)"
+        "%s（%s 每骰）"
     ],
     "76": [
         "%s running start"
@@ -1573,7 +1573,7 @@
         "%s options:"
     ],
     "72": [
-        "%s is copyrighted ©%s by %s"
+        "%s 的版权归 %s 所有 ©%s"
     ],
     "77": [
         "%s v%s is available!"
@@ -4522,7 +4522,7 @@
         "Are you sure you want to reset %s?"
     ],
     "43": [
-        " per full day"
+        " 每整天"
     ],
     "1310": [
         "The value of all of these pieces of equipment, plus the value of any contained equipment"
@@ -4561,7 +4561,7 @@
         "Shift-Click or %v-Click to select more than one"
     ],
     "73": [
-        "%s meters"
+        "%s 米"
     ],
     "1083": [
         "Rendering page %d…"
@@ -4579,10 +4579,10 @@
         "*From [T Bone's Games Diner](https://www.gamesdiner.com/rules-nugget-gurps-new-damage-for-st/)*"
     ],
     "17": [
-        "600% Scale"
+        "600% 比例"
     ],
     "37": [
-        " game, which is used by permission of Steve Jackson Games."
+        " 游戏，该游戏由 Steve Jackson Games 授权使用。"
     ],
     "1294": [
         "The maximum load that can be carried and still remain within the %s encumbrance level"
@@ -4600,13 +4600,13 @@
         "Reverse Landscape"
     ],
     "49": [
-        "!: This weapon can only fire on full automatic. Minimum RoF is %v."
+        "!:该武器只能全自动射击。最小射程为 %v。"
     ],
     "1038": [
         "Range In Miles"
     ],
     "10": [
-        "50% Scale"
+        "50% 比例"
     ],
     "1291": [
         "The locale to use when presenting text in the user interface. This does not affect the content of data files. Leave this value blank to use the system default. Note that changes to this generally require quitting and restarting GCS to have the desired effect."
@@ -4633,7 +4633,7 @@
         "Maximum of 4 hours per day with a part-time job"
     ],
     "66": [
-        "%s (%s per level)"
+        "%s（%s 每个级别）"
     ],
     "634": [
         "Invalid option specification: %v"
@@ -4660,7 +4660,7 @@
         "Value must be no more than %s"
     ],
     "28": [
-        " a trait whose name "
+        " 一个特质，其名为 "
     ],
     "1273": [
         "The amount of DR this hit location grants due to natural toughness"
