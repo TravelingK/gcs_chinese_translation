@@ -21,8 +21,8 @@ jobs:
         run: |
           download_url=$(curl -s https://api.github.com/repos/richardwilkes/gcs/releases/latest|grep -i language.i18n |grep -i download|awk -F '[\"]' '{print $4}')
           curl -L -o  language.i18n $download_url
-          find .
           python3 ./.github/workflows/tojson.py 
+          find .
 
                     
       #- name: Add & Commit
